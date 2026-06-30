@@ -1,0 +1,27 @@
+node_modules/
+.next/
+build/
+dist/
+# Node
+node_modules/
+.next/
+
+# Java
+target/
+
+# Build
+build/
+dist/
+
+# IDE
+.idea/
+.vscode/
+
+node_modules/
+.next/
+target/
+build/
+dist/
+
+.env.local
+*.log

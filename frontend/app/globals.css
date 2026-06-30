@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 192 24% 96%;
+  --foreground: 222 47% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --muted: 193 18% 90%;
+  --muted-foreground: 216 15% 38%;
+  --primary: 174 72% 32%;
+  --primary-foreground: 0 0% 100%;
+  --border: 200 16% 82%;
+  --input: 200 16% 82%;
+  --ring: 174 72% 32%;
+}
+
+.dark {
+  --background: 222 38% 8%;
+  --foreground: 198 35% 94%;
+  --card: 220 32% 12%;
+  --card-foreground: 198 35% 94%;
+  --muted: 218 28% 17%;
+  --muted-foreground: 214 18% 72%;
+  --primary: 173 80% 42%;
+  --primary-foreground: 220 36% 8%;
+  --border: 217 24% 22%;
+  --input: 217 24% 22%;
+  --ring: 173 80% 42%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(22px);
+  border: 1px solid rgba(255, 255, 255, 0.62);
+}
+
+.dark .glass {
+  background: rgba(16, 24, 39, 0.72);
+  border-color: rgba(148, 163, 184, 0.18);
+}
+
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.06) 1px, transparent 1px);
+  background-size: 38px 38px;
+}
+
+.dark .grid-pattern {
+  background-image:
+    linear-gradient(rgba(226, 232, 240, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(226, 232, 240, 0.06) 1px, transparent 1px);
+}
